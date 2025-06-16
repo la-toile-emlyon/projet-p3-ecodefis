@@ -85,6 +85,10 @@ a {
   font-size: 40px;
 }
 
+.text-center {
+  text-align: center;
+}
+
 /* FLEX */
 
 .flex {
@@ -148,6 +152,20 @@ a {
   cursor: pointer;
 }
 
+/* POSITION */
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.sticky {
+  position: sticky;
+}
+
 /* GAP */
 
 .gap-5 {
@@ -174,7 +192,25 @@ a {
   gap: 50px;
 }
 
+.gap-100 {
+  gap: 100px;
+}
+
+/* HEIGHT */
+
+.h100 {
+  height: 100%;
+}
+
+.h-auto {
+  height: auto;
+}
+
 /* WIDTH */
+
+.w-auto {
+  width: auto;
+}
 
 .w100 {
   width: 100%;
@@ -192,10 +228,16 @@ header {
   padding: 20px 0;
   position: sticky;
   top: 0;
-  width: 100%;
-  justify-content: center;
   z-index: 9999;
   background-color: var(--blanc);
+}
+
+header ul {
+  list-style: none;
+}
+
+header a {
+  color: black;
 }
 
 .hero {
@@ -203,16 +245,10 @@ header {
   overflow: hidden;
 }
 
-.image-hero {
-  height: 100%;
-  position: relative;
-}
-
 .image-hero img {
   width: 900px;
   height: auto;
   object-fit: cover;
-  position: absolute;
   box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -245,35 +281,23 @@ header {
 }
 
 .card {
+  color: var(--vertfonce);
+  border-radius: 20px;
   background-color: var(--beige);
-  padding: 30px;
-  width: 270px;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  border-radius: 25px;
-  font-size: 20px;
-  height: auto;
+  overflow: hidden;
+}
+
+.card div {
+  padding: 0 10px;
 }
 
 .card img {
-  width: 100px;
-  height: auto;
+  height: 300px;
   object-fit: cover;
 }
 
-.card h4 {
-  margin: 30px 0;
-}
-
-.card p {
-  text-align: center;
-}
-
 .choisir h3 {
-  text-align: center;
   margin-bottom: 30px;
-  font-size: 32px;
   color: var(--blanc);
 }
 
@@ -286,18 +310,13 @@ header {
   padding: 50px 0;
 }
 
-.tarifs>div {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-}
-
 .tarifs h3 {
-  text-align: center;
+  margin-bottom: 50px;
+  color: var(--vertfonce);
 }
 
 .tarifcard-header {
-  padding: 12px 20px;
+  padding: 18px 36px;
   background-color: var(--vertfonce);
   color: var(--blanc);
   border-radius: 9999px;
@@ -312,15 +331,88 @@ header {
 
 .tarifcard {
   background-color: var(--beige);
-  padding: 20px 30px;
-  width: 350px;
-  list-style: outside;
+  padding: 60px 40px 40px 40px;
+  width: 100%;
+  line-height: 30px;
   font-size: 20px;
   position: relative;
+  color: var(--vertfonce);
+  display: flex;
+  align-items: flex-end;
+  height: auto;
+  border-radius: 40px;
+}
+
+.tarifcard ul {
+  margin: 20px 0;
+}
+
+.tarifcard ul li {
+  list-style: none;
+}
+
+.tarifcard img {
+  padding-right: 10px;
 }
 
 .price {
-  color: red;
+  color: var(--vertfonce);
   font-size: 32px;
   font-weight: 600;
+}
+
+.acheter {
+  display: block;
+  text-align: center;
+}
+
+footer {
+  background-color: var(--vertfonce);
+  padding: 30px 0;
+}
+
+
+.gauche h3 {
+  padding: 30px 0;
+  font-size: 24px;
+  color: var(--beige);
+}
+
+.gauche a {
+  padding: 12px 20px;
+  border-radius: 9999px;
+  background-color: var(--beige);
+  color: var(--vertfonce);
+  font-weight: 600;
+  display: inline-block;
+}
+
+.footer-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.milieu ul {
+  line-height: 40px;
+  list-style: none;
+  font-weight: 600;
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+}
+
+.milieu a {
+  color: white;
+}
+
+.droit {
+  display: flex;
+  align-items: flex-end;
+  gap: 25px;
+}
+
+.legal {
+  padding-top: 30px;
+  text-align: center;
+  color: white;
 }
