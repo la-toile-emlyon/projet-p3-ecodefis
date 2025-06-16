@@ -1,16 +1,138 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Projet - Page d'accueil</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href="index.css" rel="stylesheet" type="text/css" />
-    <script src="script.js" type="text/javascript"></script>
-  </head>
 
-  <body>
-    Accueil
-    <a href="/doc.html">Documentation</a>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Projet - Page d'accueil</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="index.css" rel="stylesheet" type="text/css" />
+  <script src="script.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <header class="flex align-center space-between">
+    <h2>Eco<span>Défis</span></h2>
+    <nav>
+      <ul class="flex gap-30">
+        <li><a href="#">Accueil</a></li>
+        <li><a href="doc.html">Documentation</a></li>
+        <li><a href="#" class="bouton-principal">Devis gratuit !</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero flex align-center">
+      <div class="flex flex-column gap-30 w50">
+        <h1 class="fsize-40">Défis Écologiques Collectifs en Entreprise</h1>
+        <p class="fsize-24">L'outil qui transforme l'engagement RSE <br>en
+          aventure d'équipe</p>
+        <div class="flex gap-20">
+          <a href="" class=" bouton-principal">Demander un devis</a>
+          <a href="" class="bouton-secondaire">Tester gratuitement</a>
+        </div>
+      </div>
+      <div class="image-hero w50">
+        <img src="assets/home.png" alt="" class="">
+        <img src="assets/podium-persons.png" alt="">
+      </div>
+    </section>
+
+    <section class="entreprises">
+      <h3 class="fsize-32 text-align weight600">Ils l'utilisent déja</h3>
+      <div class="flex space-between">
+        <img src="assets/engie.png" alt="">
+        <img src="assets/adobe.png" alt="">
+        <img src="assets/spotify.png" alt="">
+        <img src="assets/miro.png" alt="">
+      </div>
+    </section>
+
+    <section class="choisir">
+      <h3>Pourquoi nous choisir ?</h3>
+      <div class="flex justify-center gap-50">
+        <div class="card">
+          <img src="assets/drapeau.png" alt="">
+          <h4>Une approche simple</h4>
+          <p>Pas besoin d'être expert en RSE : notre solution est clé-en-main, intuitive, et rapide à déployer.</p>
+        </div>
+        <div class="card">
+          <img src="assets/drapeau.png" alt="">
+          <h4>On avance ensemble</h4>
+          <p> impliquer les équipes est essentiel pour favoriser des changements durables.</p>
+        </div>
+        <div class="card">
+          <img src="assets/drapeau.png" alt="">
+          <h4>Des résultats concrets</h4>
+          <p>Suivez vos défis, valorisez vos actions RSE et démontrez vos engagements auprès de vos parties prenantes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="tarifs">
+      <h3>Tarification</h3>
+      <div>
+        <div class="tarifcard">
+          <div class="tarifcard-header">
+            <p>Essentiel</p>
+          </div>
+          <div>
+            <p class="price">19,99€ / mois</p>
+            <ul>
+              <li>Accès à 1 défi/mois (préconfiguré)</li>
+              <li>Jusqu'à 50 utilisateurs</li>
+              <li>Classement par équipe/service</li>
+              <li>Suivi basique des KPIs RSE</li>
+              <li>Recommandations écogestes personnalisées</li>
+              <li>Accès admin RSE + tableau de bord simple</li>
+              <li>Support email 48h</li>
+            </ul>
+            <a href="#" class="bouton-principal">Acheter !</a>
+          </div>
+        </div>
+
+        <div class="tarifcard">
+          <div class="tarifcard-header">
+            <p>Impact</p>
+          </div>
+          <div>
+            <p>25,99€ / mois</p>
+            <ul>
+              <li>Jusqu'à 4 défis personnalisables/mois</li>
+              <li>Création d'équipes internes, badges, points, classement</li>
+              <li>Suivi d'impact environnemental (eau, CO2, déchets évités…)</li>
+              <li>Dashboard avancé pour les responsables RSE</li>
+              <li>Intégration Slack / Teams / Email</li>
+              <li>Statistiques comparatives entre équipes</li>
+              <li>Support prioritaire (24h)</li>
+            </ul>
+            <a href="#" class="bouton-principal">Acheter !</a>
+          </div>
+        </div>
+
+        <div class="tarifcard">
+          <div class="tarifcard-header">
+            <p>Transformation</p>
+          </div>
+          <div>
+            <p>35,99€ / mois</p>
+            <ul>
+              <li>Accès à 1 défi/mois (préconfiguré)</li>
+              <li>Jusqu'à 50 utilisateurs</li>
+              <li>Classement par équipe/service</li>
+              <li>Suivi basique des KPIs RSE</li>
+              <li>Recommandations écogestes personnalisées</li>
+              <li>Accès admin RSE + tableau de bord simple</li>
+              <li>Support email 48h</li>
+            </ul>
+            <a href="#" class="bouton-principal">Acheter !</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>
