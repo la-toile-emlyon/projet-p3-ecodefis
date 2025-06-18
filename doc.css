@@ -9,6 +9,101 @@
     margin: 0;
 }
 
+.scroll-mtop {
+    scroll-margin-top: 120px;
+}
+
+.list-style-none {
+    list-style: none;
+}
+
+.deco-underline {
+    text-decoration: underline;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+
+/* //////////////////////////////////// */
+/* BOUTONS */
+/* //////////////////////////////////// */
+
+.bouton-principal {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 18px 36px;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: var(--beige);
+    color: var(--blanc);
+}
+
+.bouton-principal span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+}
+
+.bouton-principal:hover span {
+    color: var(--noir);
+}
+
+.bouton-principal::before,
+.bouton-principal::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.bouton-principal::before {
+    content: "";
+    background: var(--vertfonce);
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.bouton-principal:hover::before {
+    transform: translate3d(100%, 0, 0);
+}
+
+.bouton-secondaire {
+    color: var(--vertfonce);
+    padding: 12px 20px;
+    border: 2px solid var(--vertfonce);
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.bouton-secondaire:hover {
+    padding: 12px 36px;
+}
+
+.bouton-tertiaire {
+    padding: 12px 20px;
+    border-radius: 9999px;
+    background-color: var(--beige);
+    color: var(--vertfonce);
+    transition: all 0.3s ease;
+}
+
+.bouton-tertiaire:hover {
+    padding: 12px 36px;
+}
 
 /* COLORS */
 
@@ -31,6 +126,7 @@ header {
 
     a,
     .bouton-principal {
+        color: var(--vertfonce);
         transition: all .3s ease;
     }
 }
@@ -362,6 +458,10 @@ a {
     border-radius: 12px;
 }
 
+.contexte {
+    padding: 50px 0;
+}
+
 /*Problematique*/
 .problematique {
     font-weight: bold;
@@ -373,16 +473,16 @@ a {
     font-family: "The Nautigal", cursive;
 }
 
+
+
 /* userflow */
 .centre {
     text-align: center;
 }
 
 .container {
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
 
@@ -481,6 +581,7 @@ a {
 
 .content {
     width: 80%;
+    padding-right: 50px;
 }
 
 .menu {
@@ -511,6 +612,19 @@ a {
     }
 }
 
+/* Prototype */
+
+.prototype {
+    background-color: red;
+    border-radius: 12px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.prototype iframe {
+    margin: 50px;
+}
 
 /* test utilisateurs */
 
@@ -553,4 +667,86 @@ a {
 /* solution */
 .sos {
     padding: 16px;
+}
+
+/* //////////////////////////////////// */
+/* FOOTER */
+/* //////////////////////////////////// */
+
+footer {
+    background-color: var(--vertfonce);
+    padding-top: 50px;
+}
+
+
+.agauche h3 {
+    padding: 30px 0;
+    font-size: 24px;
+    color: var(--beige);
+}
+
+.agauche svg {
+    transition: transform 0.3s ease;
+}
+
+.agauche svg:hover {
+    transform: scale(1.2);
+}
+
+.footer-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.milieu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.milieu ul {
+    line-height: 40px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.milieu a {
+    color: var(--beige);
+}
+
+.milieu a:hover {
+    color: var(--beige);
+    text-decoration: underline;
+}
+
+.droit {
+    display: flex;
+    align-items: flex-end;
+    gap: 30px;
+}
+
+.droit img {
+    transition: transform 0.3s ease;
+}
+
+.droit img:hover {
+    transform: scale(1.3);
+}
+
+.legal {
+    padding: 15px 0;
+    text-align: center;
+    color: var(--vertfonce);
+    background-color: var(--blanc);
+}
+
+@media all and (max-width : 1500px) {
+    .container {
+        max-width: 1000px;
+
+    }
 }

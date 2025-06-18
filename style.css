@@ -278,7 +278,7 @@ a {
 }
 
 .bouton-principal:hover span {
-  color: var(--noir);
+  color: var(--vertfonce);
 }
 
 .bouton-principal::before,
@@ -671,16 +671,17 @@ header {
 
 .acheter {
   display: inline-block;
-  padding: 12px 36px;
+  text-align: center;
   font-size: 20px;
   background-color: var(--vertfonce);
   color: var(--beige);
   transition: all 0.3s ease;
   line-height: 1.5;
+  width: 141px;
 }
 
 .acheter:hover {
-  padding: 12px 52px;
+  width: 100%;
 }
 
 .bouton-conseiller {
