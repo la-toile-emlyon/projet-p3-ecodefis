@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap');
 
 *,
 *::before,
@@ -316,6 +317,7 @@ a {
 }
 
 
+
 /* Le code CSS spécifique à la page de documentation */
 .hero-docu {
     height: 75vh;
@@ -360,6 +362,17 @@ a {
     border-radius: 12px;
 }
 
+/*Problematique*/
+.problematique {
+    font-weight: bold;
+    font-style: 22px;
+}
+
+.problematique span {
+    font-size: 64px;
+    font-family: "The Nautigal", cursive;
+}
+
 /* userflow */
 .centre {
     text-align: center;
@@ -373,8 +386,8 @@ a {
 }
 
 
-.problematique {
-    padding: 64px 0;
+.sectionverte {
+    padding: 64px 32px;
     margin-top: 100px;
     margin-bottom: 100px;
 }
@@ -476,10 +489,68 @@ a {
     margin-right: auto;
     position: sticky;
     top: 132px;
-    background-color: red;
+    background-color: var(--vertfonce);
     padding: 16px;
+    border-radius: 16px;
+
+    a {
+        color: var(--blanc);
+        transition: color .3s ease;
+    }
+
+    a:hover {
+        color: var(--vertclair)
+    }
 
     ul {
         list-style: none;
+
+        li {
+            margin-bottom: 8px;
+        }
     }
+}
+
+
+/* test utilisateurs */
+
+
+
+.lorem {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+
+}
+
+.images-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.img-block {
+    text-align: center;
+}
+
+.img-block img {
+    width: 350px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.img-block span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* solution */
+.sos {
+    padding: 16px;
 }
