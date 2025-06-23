@@ -276,7 +276,7 @@ a {
     position: relative;
     display: inline-block;
     font-size: 20px;
-    border-radius: 500px;
+    border-radius: 0;
     overflow: hidden;
     background: var(--beige);
     color: var(--blanc);
@@ -319,7 +319,7 @@ a {
     color: var(--vertfonce);
     padding: 12px 20px;
     border: 2px solid var(--vertfonce);
-    border-radius: 9999px;
+    border-radius: 0;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -330,7 +330,7 @@ a {
 
 .bouton-tertiaire {
     padding: 12px 20px;
-    border-radius: 9999px;
+    border-radius: 0;
     background-color: var(--beige);
     color: var(--vertfonce);
     transition: all 0.3s ease;

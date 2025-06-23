@@ -50,7 +50,7 @@ html {
   --vertfonce: #285430;
   --vert: #5F8D4E;
   --vertclair: #A4BE7B;
-  --beige: #E5D9B6;
+  --beige: #f4edd6;
   --blanc: #FFFFFF;
   --noir: #000000;
 }
@@ -269,7 +269,7 @@ a {
   position: relative;
   display: inline-block;
   font-size: 20px;
-  border-radius: 500px;
+  border-radius: 0;
   overflow: hidden;
   background: var(--beige);
   color: var(--blanc);
@@ -312,7 +312,7 @@ a {
   color: var(--vertfonce);
   padding: 12px 20px;
   border: 2px solid var(--vertfonce);
-  border-radius: 9999px;
+  border-radius: 0;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -323,7 +323,7 @@ a {
 
 .bouton-tertiaire {
   padding: 12px 20px;
-  border-radius: 9999px;
+  border-radius: 0;
   background-color: var(--beige);
   color: var(--vertfonce);
   transition: all 0.3s ease;
@@ -448,6 +448,7 @@ header {
 
 .bouton-devis {
   font-size: 16px;
+  border-radius: 0;
   padding: 12px 20px;
   color: var(--beige);
 }
@@ -574,7 +575,7 @@ header {
 
 .card {
   color: var(--vertfonce);
-  border-radius: 20px;
+  border-radius: 0;
   padding: 30px;
   width: 22%;
   background-color: var(--beige);
@@ -623,10 +624,12 @@ header {
 }
 
 .tarifcard-header {
-  padding: 18px 36px;
+  padding: 16px 0;
+  text-align: center;
+  width: 100%;
   background-color: var(--vertfonce);
   color: var(--blanc);
-  border-radius: 9999px;
+  border-radius: 0;
   position: absolute;
   display: inline-block;
   transform: translate(-50%, -50%);
@@ -652,7 +655,7 @@ header {
   color: var(--vertfonce);
   display: flex;
   justify-content: space-between;
-  border-radius: 50px;
+  border-radius: 0;
 }
 
 .tarifcard ul {
@@ -690,6 +693,7 @@ header {
 
 .bouton-conseiller {
   margin-top: 50px;
+  border-radius: 0;
 }
 
 /* //////////////////////////////////// */

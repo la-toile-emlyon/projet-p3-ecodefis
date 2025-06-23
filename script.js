@@ -1,5 +1,6 @@
 let header = document.querySelector('#header');
 const textlogo = document.getElementById("text-logo")
+
 window.addEventListener('scroll', () => {
     console.log("tutu")
 
