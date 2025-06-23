@@ -505,12 +505,24 @@ header {
 }
 
 /* //////////////////////////////////// */
+/* CONTEXTE */
+/* //////////////////////////////////// */
+
+#contexte {
+    margin-top: 50px;
+}
+
+.contexte-content {
+    width: calc(50% - 25px);
+}
+
+/* //////////////////////////////////// */
 /* HERO */
 /* //////////////////////////////////// */
 
 .hero {
     height: 80vh;
-    background-image: url("assets/new/hero.png");
+    background-image: url("assets/hero.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
