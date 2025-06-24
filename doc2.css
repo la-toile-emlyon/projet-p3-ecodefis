@@ -588,10 +588,14 @@ header {
 /* //////////////////////////////////// */
 
 #solution {
-    padding: 50px 0;
+    padding-top: 50px;
 }
 
 .solution-images {
+    padding-top: 50px;
+}
+
+.solution-images:nth-child(4) {
     padding: 50px 0;
 }
 
