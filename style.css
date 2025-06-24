@@ -60,7 +60,7 @@ html {
   background-color: var(--vertfonce);
 
   a {
-    color: white;
+    color: var(--beige);
   }
 
   .bouton-principal {
