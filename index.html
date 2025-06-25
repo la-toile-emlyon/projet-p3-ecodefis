@@ -1,16 +1,482 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Projet - Page d'accueil</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href="index.css" rel="stylesheet" type="text/css" />
-    <script src="script.js" type="text/javascript"></script>
-  </head>
+<!doctype html>
+<html lang="fr">
 
-  <body>
-    Accueil
-    <a href="/doc.html">Documentation</a>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>EcoDéfis - Page d'accueil</title>
+  <link rel="icon" href="assets/circle.png">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="w100 sticky" id="header">
+
+    <!-- CONTENU DU HEADER -->
+    <div class="container flex align-center space-between">
+
+      <!-- LOGO -->
+      <a href="index.html">
+        <svg width="170" height="51" viewBox="0 0 276 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M31.9375 39.4688V50H0.125V4.90625H31.9375V15.4375H13.375V22.7188H30.7812V32.2188H13.375V39.4688H31.9375ZM71.2812 29.7812H59.625C59.375 26.2812 57.4375 24.1562 54.6875 24.1562C51.3125 24.1562 49.5 27.1562 49.5 32.7188C49.5 38.3438 51.2812 41.3438 54.6875 41.3438C57.5625 41.3438 59.4062 39.3438 59.625 35.9375H71.2812C71.1562 45.2812 64.7812 50.875 54.5312 50.875C43.3438 50.875 36.5312 44.0938 36.5312 32.7188C36.5312 21.4688 43.375 14.625 54.4688 14.625C64.5 14.625 71.125 20.4375 71.2812 29.7812ZM92.3438 50.875C81.0938 50.875 74.2188 44.375 74.2188 32.7188C74.2188 21.375 81.2812 14.625 92.3438 14.625C103.469 14.625 110.5 21.3125 110.5 32.7188C110.5 44.4062 103.625 50.875 92.3438 50.875ZM92.3438 41.7188C95.5312 41.7188 97.5 38.5312 97.5 32.75C97.5 27.125 95.5 23.7812 92.3438 23.7812C89.2188 23.7812 87.2188 27.125 87.2188 32.75C87.2188 38.5312 89.125 41.7188 92.3438 41.7188Z"
+            fill="#A4BE7B" />
+          <path
+            d="M115.188 4.90625H134.469C148.156 4.90625 156.188 12.6875 156.188 27.125C156.188 41.5625 148.125 50 134.469 50H115.188V4.90625ZM128.438 15.4375V39.4688H132.594C139.219 39.4688 142.688 35.4375 142.688 27.125C142.688 19.5312 138.938 15.4375 132.594 15.4375H128.438ZM177.688 23.4375C174.781 23.4375 172.562 25.5625 172.312 28.5312H183.062C182.844 25.4375 180.688 23.4375 177.688 23.4375ZM183.438 38.8125H194.844C193.781 46.25 187.281 50.875 177.812 50.875C166.5 50.875 159.781 44.1562 159.781 32.9375C159.781 21.6562 166.562 14.625 177.406 14.625C188.094 14.625 195 21.4375 195 32V35.4688H172.125V36.2812C172.125 39.6562 174.562 42.0938 178 42.0938C180.594 42.0938 182.688 40.875 183.438 38.8125ZM182.031 10.7812H172.219L179.469 0.75H190.312L182.031 10.7812ZM202 50V24.7812H197.438V15.8125H202V14.375C202 7.5 205.344 4.375 215.156 4.375C217.344 4.375 219.812 4.625 221.156 4.90625V12.5625C220.531 12.4375 219.594 12.375 218.719 12.375C215.656 12.375 214.438 13.4375 214.438 15V15.8125H221.062V24.7812H214.812V50H202ZM225.031 50V15.5H237.844V50H225.031ZM231.438 13.5938C227.812 13.5938 225.062 10.9688 225.062 7.53125C225.062 4.09375 227.812 1.46875 231.438 1.46875C235.062 1.46875 237.812 4.09375 237.812 7.53125C237.812 10.9688 235.062 13.5938 231.438 13.5938ZM242.062 26.2188C242.062 19.0312 248.156 14.625 258.219 14.625C268.281 14.625 274.312 19.125 274.312 26.6562H262.688C262.688 24.4062 260.906 23 258.125 23C255.812 23 254.312 23.9375 254.312 25.375C254.312 26.4375 255.438 27.2188 257.656 27.625L265.438 29.1562C272.281 30.5 275.344 33.4375 275.344 38.6875C275.344 46.1875 268.594 50.875 258.5 50.875C247.719 50.875 241.719 46.1562 241.281 38.8125H253.656C253.906 41.0938 255.781 42.5 258.656 42.5C261.156 42.5 262.656 41.6562 262.656 40.2188C262.656 39.125 261.75 38.5 259.406 38.0625L252.75 36.75C245.781 35.375 242.062 31.6875 242.062 26.2188Z"
+            fill="black" id="text-logo" />
+        </svg>
+      </a>
+
+      <!-- LIENS DE NAVIGATION -->
+      <nav>
+        <ul class="flex gap-30 list-style-none">
+          <li><a href="index.html" class="header-link">Accueil</a></li>
+          <li><a href="#entreprises" class="header-link">Nos clients</a></li>
+          <li><a href="#comment-ca-marche" class="header-link">Fonctionnalités</a></li>
+          <li><a href="#choisir" class="header-link">Atouts</a></li>
+          <li><a href="#tarifs" class="header-link">Tarifs</a></li>
+          <li><a href="doc2.html" class="header-link">Documentation</a></li>
+          <li><a href="#" class="bouton-tertiaire">Devis gratuit !</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- CONTENU PRINCIPAL -->
+  <main>
+    <!-- HERO -->
+    <section class="hero flex align-center">
+
+      <!-- CONTAINER -->
+      <div class="container flex flex-column gap-30 w100">
+
+        <!-- SLOGAN -->
+        <h1 class="fsize-40">Défis écologiques collectifs <br> en entreprise</h1>
+        <p class="fsize-24">L'outil qui transforme l'engagement RSE <br>en
+          aventure d'équipe</p>
+
+        <!-- BOUTONS -->
+        <div class="flex gap-20">
+          <a href="" class=" bouton-principal bouton-devis" id="bouton-devis"><span>Demander un devis</span></a>
+          <a href="" class="bouton-secondaire gratuit">Tester gratuitement</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CARROUSEL ENTREPRISES -->
+    <section id="entreprises" class="entreprises scroll-mtop bg-vertclair">
+
+      <!-- CONTAINER -->
+      <div>
+        <h3 class="fsize-32 text-align weight600 color-vertfonce">Nos clients</h3>
+
+        <!-- CARROUSEL -->
+        <div class="carrousel-entreprises flex w100 flex-nowrap">
+
+          <!-- GROUPE ENTREPRISES 1 -->
+          <div class="group-entreprises flex space-around">
+            <img src="assets/engie.svg" alt="">
+            <img src="assets/adobe.svg" alt="">
+            <img src="assets/spotify.svg" alt="">
+            <img src="assets/miro.svg" alt="">
+          </div>
+
+          <!-- GROUPE ENTREPRISES 2 -->
+          <div class="group-entreprises flex space-around">
+            <img src="assets/engie.svg" alt="">
+            <img src="assets/adobe.svg" alt="">
+            <img src="assets/spotify.svg" alt="">
+            <img src="assets/miro.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACCORDEON FONCTIONNALITES -->
+    <section class="comment-ca-marche scroll-mtop container" id="comment-ca-marche">
+      <h3 class="text-center fsize-32 color-vertfonce">Fonctionnalités</h3>
+
+      <!-- CONTAINER -->
+      <div class="flex">
+
+        <!-- IMAGES DE GAUCHE -->
+        <div class="comment-ca-marche-gauche">
+          <img src="assets/challenge-creation3.png" alt="Outil de création d'un défi" class="observe" id="img-1">
+          <img src="assets/challenge-creation3-popup.png" alt="Popup de partage du défi" class="observe" id="img-2">
+          <img src="assets/podium-services.png" alt="Podium des services" class="observe" id="img-3">
+
+        </div>
+
+        <!-- ACCORDEON DE DROITE -->
+        <div class="comment-ca-marche-droite">
+
+          <!-- CONTENU -->
+          <div class="comment-ca-marche-sticky">
+
+            <!-- PARTIE 1 -->
+            <div class="accordeon" id="acc-1">
+
+              <!-- TITRE -->
+              <div class="accordeon-titre fsize-24 color-vertfonce nunito weight-600">1. Créer un défi</div>
+
+              <!-- CONENU DE LA PARTIE -->
+              <div class="accordeon-content color-vertfonce">
+                <div>
+                  <ul class="accordeon-ul">
+                    <li><img src="assets/checkvert.svg" alt=""><strong>Personnalisez la fréquence et la durée :</strong>
+                      Adaptez la
+                      périodicité des défis (mensuelle, trimestrielle, etc.) selon vos objectifs et les rythmes de
+                      travail de vos équipes pour maximiser l'impact.</li>
+                    <li><img src="assets/checkvert.svg" alt=""><strong>Impliquez tous les niveaux hiérarchiques
+                        :</strong> Favorisez
+                      l'engagement de tous, du management aux opérationnels, pour créer une dynamique collective forte
+                      et durable.</li>
+                    <li><img src="assets/checkvert.svg" alt=""><strong>Intégrez des ressources pédagogiques :</strong>
+                      Fournissez des
+                      conseils, astuces et contenus utiles pour aider chacun à comprendre les enjeux et à relever le
+                      défi avec confiance.</li>
+                  </ul>
+
+                  <p>Choisissez un <strong>défi écologique mensuel</strong> (mobilité douce, zéro déchet, énergie…).
+                    Attribuez-le à un ou plusieurs <strong>services ou équipes</strong>.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- PARTIE 2 -->
+            <div class="accordeon" id="acc-2">
+
+              <!-- TITRE -->
+              <div class="accordeon-titre fsize-24 color-vertfonce nunito weight-600">2. Partagez vos actions</div>
+
+              <!-- CONTENU DE LA PARTIE -->
+              <div class="accordeon-content color-vertfonce">
+                <div>
+                  <ul class="accordeon-ul">
+                    <li><img src="assets/checkvert.svg" alt=""><strong>Favorisez l'interactivité et les échanges
+                        :</strong> Encouragez
+                      les commentaires et les réactions sur les publications pour renforcer la cohésion et valoriser les
+                      initiatives.</li>
+                    <li><img src="assets/checkvert.svg" alt=""><strong>Utilisez des indicateurs qualitatifs et
+                        quantitatifs :</strong> En
+                      plus des preuves visuelles, ajoutez des chiffres ou anecdotes pour mieux mesurer l'impact des
+                      actions menées.</li>
+                    <li><img src="assets/checkvert.svg" alt=""><strong>Mettez en avant les ambassadeurs :</strong>
+                      Identifiez et
+                      récompensez les contributeurs les plus actifs pour encourager l'émulation et la prise
+                      d'initiative.</li>
+                  </ul>
+                  <p>Chaque équipe <strong>documente ses efforts</strong> au fil du défi. Par photos, par vidéos, par
+                    vocal, par
+                    validation
+                    manuelle de la <strong>responsable RSE</strong>.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- PARTIE 3 -->
+            <div class="accordeon" id="acc-3">
+
+              <!-- TITRE -->
+              <div class="accordeon-titre fsize-24 color-vertfonce nunito weight-600">3. Célébrez les résultats</div>
+
+              <!-- CONTENU DE LA PARTIE -->
+              <div class="accordeon-content color-vertfonce">
+                <div>
+                  <ul class="accordeon-ul">
+                    <li><img src="assets/checkvert.svg" alt=""><strong>Organisez des événements conviviaux :</strong>
+                      Invitez les équipes
+                      à des moments festifs pour partager les succès et renforcer les liens humains autour de la
+                      démarche écologique.</li>
+                    <li><img src="assets/checkvert.svg" alt=""><strong>Communiquez en externe :</strong> Partagez vos
+                      réussites sur vos
+                      réseaux sociaux ou newsletter pour valoriser votre engagement auprès de vos clients et
+                      partenaires.</li>
+                    <li><img src="assets/checkvert.svg" alt=""><strong>Fixez de nouveaux objectifs :</strong> Utilisez
+                      les résultats pour
+                      planifier les défis suivants, en améliorant continuellement la stratégie et en mobilisant les
+                      équipes sur le long terme.</li>
+                  </ul>
+                  <p>À la fin du défi, chaque équipe découvre son <strong>score</strong>, son classement
+                    et l'<strong>impact collectif généré</strong>.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CARDS POURQUOI NOUS CHOISIR -->
+    <section class="choisir scroll-mtop" id="choisir">
+
+      <!-- CONTAINER -->
+      <div class="container">
+        <h3 class="text-center fsize-32">Atouts</h3>
+
+        <!-- CONTENU -->
+        <div class="flex space-between gap-20">
+
+          <!-- CARD 1 -->
+          <div class="card flex justify-start w-100 gap-10 fsize-20 flex-column">
+
+            <!-- ICONE -->
+            <svg fill="#285430" height="50px" width="50px" version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve">
+              <g>
+                <path d="M12,17c0.8-4.2,1.9-5.3,6.1-6.1c0.5-0.1,0.8-0.5,0.8-1s-0.3-0.9-0.8-1C13.9,8.1,12.8,7,12,2.8C11.9,2.3,11.5,2,11,2
+		c-0.5,0-0.9,0.3-1,0.8C9.2,7,8.1,8.1,3.9,8.9C3.5,9,3.1,9.4,3.1,9.9s0.3,0.9,0.8,1c4.2,0.8,5.3,1.9,6.1,6.1c0.1,0.5,0.5,0.8,1,0.8
+		S11.9,17.4,12,17z" />
+                <path d="M22,24c-2.8-0.6-3.4-1.2-4-4c-0.1-0.5-0.5-0.8-1-0.8s-0.9,0.3-1,0.8c-0.6,2.8-1.2,3.4-4,4c-0.5,0.1-0.8,0.5-0.8,1
+		s0.3,0.9,0.8,1c2.8,0.6,3.4,1.2,4,4c0.1,0.5,0.5,0.8,1,0.8s0.9-0.3,1-0.8c0.6-2.8,1.2-3.4,4-4c0.5-0.1,0.8-0.5,0.8-1
+		S22.4,24.1,22,24z" />
+                <path d="M29.2,14c-2.2-0.4-2.7-0.9-3.1-3.1c-0.1-0.5-0.5-0.8-1-0.8c-0.5,0-0.9,0.3-1,0.8c-0.4,2.2-0.9,2.7-3.1,3.1
+		c-0.5,0.1-0.8,0.5-0.8,1s0.3,0.9,0.8,1c2.2,0.4,2.7,0.9,3.1,3.1c0.1,0.5,0.5,0.8,1,0.8c0.5,0,0.9-0.3,1-0.8
+		c0.4-2.2,0.9-2.7,3.1-3.1c0.5-0.1,0.8-0.5,0.8-1S29.7,14.1,29.2,14z" />
+                <path d="M5.7,22.3C5.4,22,5,21.9,4.6,22.1c-0.1,0-0.2,0.1-0.3,0.2c-0.1,0.1-0.2,0.2-0.2,0.3C4,22.7,4,22.9,4,23s0,0.3,0.1,0.4
+		c0.1,0.1,0.1,0.2,0.2,0.3c0.1,0.1,0.2,0.2,0.3,0.2C4.7,24,4.9,24,5,24c0.1,0,0.3,0,0.4-0.1s0.2-0.1,0.3-0.2
+		c0.1-0.1,0.2-0.2,0.2-0.3C6,23.3,6,23.1,6,23s0-0.3-0.1-0.4C5.9,22.5,5.8,22.4,5.7,22.3z" />
+                <path d="M28,7c0.3,0,0.5-0.1,0.7-0.3C28.9,6.5,29,6.3,29,6s-0.1-0.5-0.3-0.7c-0.1-0.1-0.2-0.2-0.3-0.2c-0.2-0.1-0.5-0.1-0.8,0
+		c-0.1,0-0.2,0.1-0.3,0.2C27.1,5.5,27,5.7,27,6c0,0.3,0.1,0.5,0.3,0.7C27.5,6.9,27.7,7,28,7z" />
+              </g>
+            </svg>
+
+            <!-- CONTENU -->
+            <div class="flex flex-column justify-center gap-20">
+              <h4 class="fsize-24">Une approche simple</h4>
+              <p class="fsize-20">Pas besoin d'être expert en RSE : notre solution est clé-en-main, intuitive, et
+                rapide à
+                déployer.</p>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="card flex justify-start w-100 gap-10 fsize-20 flex-column">
+
+            <!-- ICONE -->
+            <svg fill="#285430" height="50px" width="50px" version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve">
+              <path d="M27,5c-1.7,0-3,1.3-3,3c0,0.3,0,0.5,0.1,0.8l-5.4,3.8C18.2,12.2,17.6,12,17,12c-0.8,0-1.5,0.3-2.1,0.8L8,9.4
+	C8,9.2,8,9.1,8,9c0-1.7-1.3-3-3-3S2,7.3,2,9s1.3,3,3,3c0.8,0,1.5-0.3,2.1-0.8l7,3.5c0,0.1,0,0.2,0,0.4c0,0.9,0.4,1.7,1,2.2L12.2,24
+	c-0.1,0-0.1,0-0.2,0c-1.7,0-3,1.3-3,3s1.3,3,3,3s3-1.3,3-3c0-0.9-0.4-1.7-1-2.2l2.8-6.8c0.1,0,0.1,0,0.2,0c1.7,0,3-1.3,3-3
+	c0-0.3,0-0.5-0.1-0.8l5.4-3.8c0.5,0.4,1.1,0.6,1.7,0.6c1.7,0,3-1.3,3-3S28.7,5,27,5z" />
+            </svg>
+
+            <!-- CONTENU -->
+            <div class="flex flex-column justify-center gap-20">
+              <h4 class="fsize-24">On avance ensemble</h4>
+              <p class="fsize-20">Impliquer les équipes est essentiel pour favoriser des changements durables.</p>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="card flex justify-start w-100 gap-10 fsize-20 flex-column">
+
+            <!-- ICONE -->
+            <svg fill="#285430" height="50px" width="50px" version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve">
+              <path d="M29.3,26.2c-6.2-2.1-12.9-2.6-19.3-1.7v-8.6c2.1-1,3.6-0.2,5.5,0.8c1.4,0.7,2.9,1.4,4.6,1.4c1,0,2.2-0.3,3.4-1
+	c0.3-0.2,0.5-0.5,0.5-0.9V6.8c0-0.4-0.2-0.7-0.5-0.9c-0.3-0.2-0.7-0.2-1,0c-2.3,1.4-4,0.5-6-0.5c-2.2-1.1-4.7-2.4-8-0.5
+	C8.2,5.2,8,5.5,8,5.8V15v0.2v9.6c-1.8,0.3-3.6,0.8-5.3,1.4c-0.5,0.2-0.8,0.7-0.6,1.3c0.2,0.5,0.7,0.8,1.3,0.6
+	c1.5-0.5,3.1-0.9,4.7-1.3V28c0,0.6,0.4,1,1,1s1-0.4,1-1v-1.5c6.2-0.9,12.7-0.4,18.7,1.6c0.1,0,0.2,0.1,0.3,0.1
+	c0.4,0,0.8-0.3,0.9-0.7C30.1,26.9,29.8,26.3,29.3,26.2z" />
+            </svg>
+
+            <!-- CONTENU -->
+            <div class="flex flex-column justify-center gap-20">
+              <h4 class="fsize-24">Des résultats concrets</h4>
+              <p class="fsize-20">Suivez vos défis, valorisez vos actions RSE et démontrez vos engagements auprès de
+                vos parties
+                prenantes.
+              </p>
+            </div>
+          </div>
+
+          <!-- CARD 4 -->
+          <div class="card flex justify-start w-100 gap-10 fsize-20 flex-column">
+
+            <!-- ICONE -->
+            <svg fill="#285430" height="50px" width="50px" version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve">
+              <g>
+                <path d="M16.3,15.7c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3l11-11c0.4-0.4,0.4-1,0-1.4s-1-0.4-1.4,0l-11,11
+		C15.9,14.7,15.9,15.3,16.3,15.7z" />
+                <path d="M6,21c0,2.8,2.2,5,5,5s5-2.2,5-5s-2.2-5-5-5S6,18.2,6,21z" />
+                <path d="M29.7,14.3c-0.4-0.4-1-0.4-1.4,0L16,25.9c-2.7,2.7-7.2,2.7-9.9,0c-2.7-2.7-2.7-7.2,0-9.9L18.7,4.7c0.4-0.4,0.4-1,0.1-1.4
+		c-0.4-0.4-1-0.4-1.4-0.1L4.6,14.6c-3.5,3.5-3.5,9.2,0,12.7C6.4,29.1,8.7,30,11,30c2.3,0,4.6-0.9,6.3-2.6l12.3-11.7
+		C30.1,15.3,30.1,14.7,29.7,14.3z" />
+              </g>
+            </svg>
+
+            <!-- CONTENU -->
+            <div class="flex flex-column justify-center gap-20">
+              <h4 class="fsize-24">Un impact mesurable</h4>
+              <p class="fsize-20">Chaque action compte : vos collaborateurs voient en temps réel les effets concrets
+                de leurs efforts.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CARDS TARIFS -->
+    <section class="tarifs container scroll-mtop" id="tarifs">
+      <h3 class="text-center fsize-32">Tarifs</h3>
+
+      <!-- CONTAINER -->
+      <div class="flex gap-50 space-between">
+
+        <!-- CARD 1 -->
+        <div class="tarifcard">
+
+          <!-- BULLE FORMULE -->
+          <div class="tarifcard-header">
+            <p>Essentiel</p>
+          </div>
+
+          <!-- CONTENU -->
+          <div class="column">
+            <p class="price">29,99€ / mois HT</p>
+
+            <ul>
+              <li><img src="assets/checkvert.svg" alt="">Jusqu'à 50 utilisateurs</li>
+              <li><img src="assets/checkvert.svg" alt="">Accès à 1 défi préconfiguré / mois</li>
+              <li><img src="assets/checkvert.svg" alt="">Pas de création personnalisée</li>
+              <li><img src="assets/checkvert.svg" alt="">Classement par équipe/service</li>
+              <!-- <li><img src="assets/checkvert.svg" alt="">Recommandations écogestes personnalisées</li> -->
+              <li><img src="assets/checkvert.svg" alt="">Tableau de bord simple pour l'admin RSE</li>
+              <li><img src="assets/checkvert.svg" alt="">Export des résultats en CSV</li>
+              <li><img src="assets/checkvert.svg" alt="">Support email sous 48h</li>
+            </ul>
+
+            <a href="#" class="bouton-tertiaire acheter"><span>Acheter</span></a>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="tarifcard">
+
+          <!-- BULLE FORMULE -->
+          <div class="tarifcard-header">
+            <p>Standard</p>
+          </div>
+
+          <!-- CONTENU -->
+          <div class="column">
+            <p class="price">49,99€ / mois HT</p>
+            <ul>
+              <li><img src="assets/checkvert.svg" alt="">Jusqu'à 200 utilisateurs</li>
+              <li><img src="assets/checkvert.svg" alt="">Jusqu'à 4 défis personnalisables / mois</li>
+              <!-- <li><img src="assets/checkvert.svg" alt="">Défis adaptables aux services / équipes internes</li> -->
+              <!-- <li><img src="assets/checkvert.svg" alt="">Création d'équipes internes & classement dynamique</li> -->
+              <li><img src="assets/checkvert.svg" alt="">Suivi d'impact environnemental détaillé</li>
+              <li><img src="assets/checkvert.svg" alt="">Intégration Slack / Teams / Email</li>
+              <li><img src="assets/checkvert.svg" alt="">Dashboard avancé pour les admins</li>
+              <li><img src="assets/checkvert.svg" alt="">Dashboard avancé pour les admins</li>
+              <li><img src="assets/checkvert.svg" alt="">Support prioritaire sous 24h</li>
+            </ul>
+            <a href="#" class="bouton-tertiaire acheter"><span>Acheter</span></a>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="tarifcard">
+
+          <!-- BULLE FORMULE -->
+          <div class="tarifcard-header">
+            <p>Premium</p>
+          </div>
+
+          <!-- CONTENU -->
+          <div class="column">
+            <p class="price">109,99€ / mois HT</p>
+            <ul>
+              <li><img src="assets/checkvert.svg" alt="">Utilisateurs illimités</li>
+              <li><img src="assets/checkvert.svg" alt="">Défis illimités / mois</li>
+              <!-- <li><img src="assets/checkvert.svg" alt="">Animations mensuelles clé-en-main (avec kits de communication
+                internes)</li> -->
+              <li><img src="assets/checkvert.svg" alt="">Gamification avancée
+              </li>
+              <!-- <li><img src="assets/checkvert.svg" alt="">Reporting ESG complet, exports prêts pour la direction</li> -->
+              <li><img src="assets/checkvert.svg" alt="">Coaching RSE mensuel et suivi personnalisé</li>
+              <li><img src="assets/checkvert.svg" alt="">Support dédié (accompagnement événementiel, réunions
+                régulières)</li>
+              <li><img src="assets/checkvert.svg" alt="">Support VIP sous 2h</li>
+            </ul>
+            <a href="#" class="bouton-tertiaire acheter"><span>Acheter</span></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOUTON POUR CONTACTER UN CONSEILLER -->
+      <a href="#" class="bouton-principal bouton-conseiller"><span>Contacter un conseiller</span></a>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <!-- CONTENU DU FOOTER -->
+    <div class="footer-container container">
+
+      <!-- LOGO SLOGAN ET BOUTON -->
+      <div class="agauche">
+
+        <!-- LOGO -->
+        <svg width="200" height="51" viewBox="0 0 276 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M31.9375 39.4688V50H0.125V4.90625H31.9375V15.4375H13.375V22.7188H30.7812V32.2188H13.375V39.4688H31.9375ZM71.2812 29.7812H59.625C59.375 26.2812 57.4375 24.1562 54.6875 24.1562C51.3125 24.1562 49.5 27.1562 49.5 32.7188C49.5 38.3438 51.2812 41.3438 54.6875 41.3438C57.5625 41.3438 59.4062 39.3438 59.625 35.9375H71.2812C71.1562 45.2812 64.7812 50.875 54.5312 50.875C43.3438 50.875 36.5312 44.0938 36.5312 32.7188C36.5312 21.4688 43.375 14.625 54.4688 14.625C64.5 14.625 71.125 20.4375 71.2812 29.7812ZM92.3438 50.875C81.0938 50.875 74.2188 44.375 74.2188 32.7188C74.2188 21.375 81.2812 14.625 92.3438 14.625C103.469 14.625 110.5 21.3125 110.5 32.7188C110.5 44.4062 103.625 50.875 92.3438 50.875ZM92.3438 41.7188C95.5312 41.7188 97.5 38.5312 97.5 32.75C97.5 27.125 95.5 23.7812 92.3438 23.7812C89.2188 23.7812 87.2188 27.125 87.2188 32.75C87.2188 38.5312 89.125 41.7188 92.3438 41.7188Z"
+            fill="#A4BE7B" />
+          <path
+            d="M115.188 4.90625H134.469C148.156 4.90625 156.188 12.6875 156.188 27.125C156.188 41.5625 148.125 50 134.469 50H115.188V4.90625ZM128.438 15.4375V39.4688H132.594C139.219 39.4688 142.688 35.4375 142.688 27.125C142.688 19.5312 138.938 15.4375 132.594 15.4375H128.438ZM177.688 23.4375C174.781 23.4375 172.562 25.5625 172.312 28.5312H183.062C182.844 25.4375 180.688 23.4375 177.688 23.4375ZM183.438 38.8125H194.844C193.781 46.25 187.281 50.875 177.812 50.875C166.5 50.875 159.781 44.1562 159.781 32.9375C159.781 21.6562 166.562 14.625 177.406 14.625C188.094 14.625 195 21.4375 195 32V35.4688H172.125V36.2812C172.125 39.6562 174.562 42.0938 178 42.0938C180.594 42.0938 182.688 40.875 183.438 38.8125ZM182.031 10.7812H172.219L179.469 0.75H190.312L182.031 10.7812ZM202 50V24.7812H197.438V15.8125H202V14.375C202 7.5 205.344 4.375 215.156 4.375C217.344 4.375 219.812 4.625 221.156 4.90625V12.5625C220.531 12.4375 219.594 12.375 218.719 12.375C215.656 12.375 214.438 13.4375 214.438 15V15.8125H221.062V24.7812H214.812V50H202ZM225.031 50V15.5H237.844V50H225.031ZM231.438 13.5938C227.812 13.5938 225.062 10.9688 225.062 7.53125C225.062 4.09375 227.812 1.46875 231.438 1.46875C235.062 1.46875 237.812 4.09375 237.812 7.53125C237.812 10.9688 235.062 13.5938 231.438 13.5938ZM242.062 26.2188C242.062 19.0312 248.156 14.625 258.219 14.625C268.281 14.625 274.312 19.125 274.312 26.6562H262.688C262.688 24.4062 260.906 23 258.125 23C255.812 23 254.312 23.9375 254.312 25.375C254.312 26.4375 255.438 27.2188 257.656 27.625L265.438 29.1562C272.281 30.5 275.344 33.4375 275.344 38.6875C275.344 46.1875 268.594 50.875 258.5 50.875C247.719 50.875 241.719 46.1562 241.281 38.8125H253.656C253.906 41.0938 255.781 42.5 258.656 42.5C261.156 42.5 262.656 41.6562 262.656 40.2188C262.656 39.125 261.75 38.5 259.406 38.0625L252.75 36.75C245.781 35.375 242.062 31.6875 242.062 26.2188Z"
+            fill="white" />
+        </svg>
+        <h3>Défis écologiques collectifs en entreprise</h3>
+        <a href="#" class="bouton-tertiaire inline-block">Devis gratuit !</a>
+      </div>
+
+      <!-- LIENS DE NAVIGATION -->
+      <div class="milieu">
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#entreprises">Nos client</a></li>
+          <li><a href="#comment-ca-marche">Fonctionnalités</a></li>
+          <li><a href="#choisir">Atouts</a></li>
+          <li><a href="#tarifs">Tarifs</a></li>
+        </ul>
+      </div>
+
+      <!-- LIEN RESEAUX SOCIAUX -->
+      <div class="droit">
+        <a href="#"><img src="assets/youtube.svg" alt="Bouton YouTube"></a>
+        <a href="#"><img src="assets/linkedin.svg" alt="Bouton Linkedin"></a>
+        <a href="#"><img src="assets/facebook.svg" alt="Bouton Facebook"></a>
+        <a href="#"><img src="assets/github.svg" alt="Bouton Github"></a>
+      </div>
+    </div>
+
+    <!-- MENTION COPYRIGHT -->
+    <div class="legal">
+      <p>© 2025 EcoDéfis. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+
 </html>

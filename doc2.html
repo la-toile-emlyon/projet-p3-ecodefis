@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang=fr>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EcoDéfis - Documentation</title>
+    <link rel="stylesheet" href="doc2.css">
+    <link rel="icon" href="assets/circle.png">
+</head>
+
+<body>
+    <header class="w100 sticky" id="header">
+
+        <!-- CONTENU DU HEADER -->
+        <div class="container flex align-center space-between">
+
+            <!-- LOGO -->
+            <a href="index.html">
+                <svg width="170" height="51" viewBox="0 0 276 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M31.9375 39.4688V50H0.125V4.90625H31.9375V15.4375H13.375V22.7188H30.7812V32.2188H13.375V39.4688H31.9375ZM71.2812 29.7812H59.625C59.375 26.2812 57.4375 24.1562 54.6875 24.1562C51.3125 24.1562 49.5 27.1562 49.5 32.7188C49.5 38.3438 51.2812 41.3438 54.6875 41.3438C57.5625 41.3438 59.4062 39.3438 59.625 35.9375H71.2812C71.1562 45.2812 64.7812 50.875 54.5312 50.875C43.3438 50.875 36.5312 44.0938 36.5312 32.7188C36.5312 21.4688 43.375 14.625 54.4688 14.625C64.5 14.625 71.125 20.4375 71.2812 29.7812ZM92.3438 50.875C81.0938 50.875 74.2188 44.375 74.2188 32.7188C74.2188 21.375 81.2812 14.625 92.3438 14.625C103.469 14.625 110.5 21.3125 110.5 32.7188C110.5 44.4062 103.625 50.875 92.3438 50.875ZM92.3438 41.7188C95.5312 41.7188 97.5 38.5312 97.5 32.75C97.5 27.125 95.5 23.7812 92.3438 23.7812C89.2188 23.7812 87.2188 27.125 87.2188 32.75C87.2188 38.5312 89.125 41.7188 92.3438 41.7188Z"
+                        fill="#A4BE7B" />
+                    <path
+                        d="M115.188 4.90625H134.469C148.156 4.90625 156.188 12.6875 156.188 27.125C156.188 41.5625 148.125 50 134.469 50H115.188V4.90625ZM128.438 15.4375V39.4688H132.594C139.219 39.4688 142.688 35.4375 142.688 27.125C142.688 19.5312 138.938 15.4375 132.594 15.4375H128.438ZM177.688 23.4375C174.781 23.4375 172.562 25.5625 172.312 28.5312H183.062C182.844 25.4375 180.688 23.4375 177.688 23.4375ZM183.438 38.8125H194.844C193.781 46.25 187.281 50.875 177.812 50.875C166.5 50.875 159.781 44.1562 159.781 32.9375C159.781 21.6562 166.562 14.625 177.406 14.625C188.094 14.625 195 21.4375 195 32V35.4688H172.125V36.2812C172.125 39.6562 174.562 42.0938 178 42.0938C180.594 42.0938 182.688 40.875 183.438 38.8125ZM182.031 10.7812H172.219L179.469 0.75H190.312L182.031 10.7812ZM202 50V24.7812H197.438V15.8125H202V14.375C202 7.5 205.344 4.375 215.156 4.375C217.344 4.375 219.812 4.625 221.156 4.90625V12.5625C220.531 12.4375 219.594 12.375 218.719 12.375C215.656 12.375 214.438 13.4375 214.438 15V15.8125H221.062V24.7812H214.812V50H202ZM225.031 50V15.5H237.844V50H225.031ZM231.438 13.5938C227.812 13.5938 225.062 10.9688 225.062 7.53125C225.062 4.09375 227.812 1.46875 231.438 1.46875C235.062 1.46875 237.812 4.09375 237.812 7.53125C237.812 10.9688 235.062 13.5938 231.438 13.5938ZM242.062 26.2188C242.062 19.0312 248.156 14.625 258.219 14.625C268.281 14.625 274.312 19.125 274.312 26.6562H262.688C262.688 24.4062 260.906 23 258.125 23C255.812 23 254.312 23.9375 254.312 25.375C254.312 26.4375 255.438 27.2188 257.656 27.625L265.438 29.1562C272.281 30.5 275.344 33.4375 275.344 38.6875C275.344 46.1875 268.594 50.875 258.5 50.875C247.719 50.875 241.719 46.1562 241.281 38.8125H253.656C253.906 41.0938 255.781 42.5 258.656 42.5C261.156 42.5 262.656 41.6562 262.656 40.2188C262.656 39.125 261.75 38.5 259.406 38.0625L252.75 36.75C245.781 35.375 242.062 31.6875 242.062 26.2188Z"
+                        fill="black" id="text-logo" />
+                </svg>
+            </a>
+
+            <!-- LIENS DE NAVIGATION -->
+            <nav>
+                <ul class="flex gap-30 list-style-none">
+                    <li><a href="index.html" class="header-link">Accueil</a></li>
+                    <li><a href="doc2.html" class="header-link">Documentation</a></li>
+                    <li><a href="#" class="bouton-tertiaire">Devis gratuit !</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero flex align-center justify-center w100 m-bottom-50">
+        <h2 class="fsize-40 color-vertfonce">Documentation</h2>
+    </section>
+
+    <main class="flex flex-nowrap">
+        <div class="sommaire">
+            <nav class="menu">
+                <h3 class="fsize-32 color-beige">Sommaire</h3>
+                <ul>
+                    <li><a href="#contexte">Contexte</a></li>
+                    <li><a href="#persona">Persona</a></li>
+                    <li><a href="#problematique">Problématique</a></li>
+                    <li><a href="#benchmark">Benchmark</a></li>
+                    <li><a href="#userflow">Userflow</a></li>
+                    <li><a href="#solution">Solution</a></li>
+                    <li><a href="#prototype">Prototype Figma</a></li>
+                    <li><a href="#usertests">Tests utilisateurs</a></li>
+                    <li><a href="#perspectives">Perspectives d'évolution</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <section id="contexte" class="scroll-mtop-50">
+                <h3 class="fsize-32 color-vertfonce m-bottom-30">Contexte</h3>
+                <div class="flex flex-column gap-50">
+
+                    <div class="flex gap-50">
+                        <div class="contexte-content">
+                            <h4 class="fsize-24 color-vertfonce m-bottom-10">Quand ?</h4>
+                            <p class="color-vertfonce">Aujourd'hui, dans un contexte où les entreprises sont appelées à
+                                intégrer la transition
+                                écologique dans leur stratégie,
+                                mais manquent d'outils adaptés à la mobilisation de leurs équipes.</p>
+                        </div>
+                        <div class="contexte-content">
+                            <h4 class="fsize-24 color-vertfonce m-bottom-10">Où ?</h4>
+                            <p class="color-vertfonce">En France, notamment à Lyon, auprès des PME qui veulent
+                                structurer
+                                leur démarche RSE.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-50">
+                        <div class="contexte-content">
+                            <h4 class="fsize-24 color-vertfonce m-bottom-10">Qui ?</h4>
+                            <p class="color-vertfonce">Les responsables RSE, RH, managers, ou tout collaborateur motivé
+                                à
+                                embarquer ses collègues
+                                dans
+                                une dynamique
+                                collective et écologique.</p>
+                        </div>
+                        <div class="contexte-content">
+                            <h4 class="fsize-24 color-vertfonce m-bottom-10">Pourquoi ?</h4>
+                            <p class="color-vertfonce">Parce que les outils actuels (PowerPoint, formations
+                                descendantes,
+                                emails) ne créent ni
+                                engagement, ni passage à
+                                l'action. Il faut une expérience ludique, collective et concrète.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="persona" class="scroll-mtop">
+                <h3 class="fsize-32 color-vertfonce">Persona</h3>
+
+                <img src="assets/persona.png" alt="Description du persona : Claire" class="w100">
+            </section>
+
+            <section id="problematique" class="scroll-mtop bg-vertclair flex flex-column align-center">
+                <h3 class="fsize-32 color-vertfonce m-bottom-30">Problématique</h3>
+
+                <p class="fsize-24 color-vertfonce text-center">" Comment aider Claire à <strong>impliquer ses collègues
+                        dans des
+                        actions écologiques</strong> concrètes en entreprise et <strong>à moindre coût</strong> ?"</p>
+            </section>
+
+            <section id="benchmark" class="scroll-mtop">
+                <h3 class="fsize-32 color-vertfonce m-bottom-30">Benchmark</h3>
+
+                <div class="reveil flex flex-nowrap flex-column">
+
+                    <!-- WWF -->
+                    <div class="flex flex-nowrap gap-50 border-test">
+                        <img src="assets/wwf.png" alt="Logo WWF">
+                        <div>
+                            <div class="flex flex-nowrap gap-50">
+                                <div class="w50">
+                                    <h5 class="m-bottom-10 fsize-18">Similitudes</h5>
+                                    <p>Propose une application pour sensibiliser les utilisateurs aux gestes écologiques
+                                        du quotidien. Vise à engager les citoyens et les salariés dans des actions
+                                        concrètes.</p>
+                                </div>
+                                <div class="w50">
+                                    <h5 class="m-bottom-10 fsize-18">Différences</h5>
+                                    <p>Approche très pédagogique, orientée grand public. Moins centrée sur les données
+                                        précises liées à l’empreinte carbone ou l’impact environnemental mesurable.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Greenly -->
+                    <div class="flex flex-nowrap gap-50 border-test">
+                        <div>
+                            <div class="flex flex-nowrap gap-50">
+                                <div class="w50">
+                                    <h5 class="m-bottom-10 fsize-18">Similitudes</h5>
+                                    <p>Plateforme d'engagement pour les collaborateurs autour de causes RSE (climat,
+                                        inclusion...). Propose des formats participatifs.</p>
+                                </div>
+                                <div class="w50">
+                                    <h5 class="m-bottom-10 fsize-18">Différences</h5>
+                                    <p>Mise sur la simplicité, l’accessibilité, et une gamification collective sans
+                                        compétences techniques ou budget élevé.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="assets/greenly.png" alt="Logo Greenly">
+                    </div>
+
+                    <!-- Vendredi -->
+                    <div class="flex flex-nowrap gap-50">
+                        <img src="assets/vendredi.png" alt="Logo Vendredi">
+                        <div>
+                            <div class="flex flex-nowrap gap-50">
+                                <div class="w50">
+                                    <h5 class="m-bottom-10 fsize-18">Similitudes</h5>
+                                    <p>Plateforme d'engagement pour les collaborateurs autour de causes RSE (climat,
+                                        inclusion...). Propose des formats participatifs.</p>
+                                </div>
+                                <div class="w50">
+                                    <h5 class="m-bottom-10 fsize-18">Différences</h5>
+                                    <p>Mise sur la simplicité, l'accessibilité, et une gamification collective sans
+                                        compétences techniques.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="userflow" class="scroll-mtop">
+                <h3 class="fsize-32 color-vertfonce m-bottom-30">Userflow</h3>
+
+                <img src="assets/userflow.png" alt="">
+            </section>
+
+            <!-- SOLUTON -->
+            <div class="bg-beige p-50 solution-container">
+                <section id="solution" class="scroll-mtop">
+                    <h3 class="fsize-32 color-vertfonce m-bottom-30">Solution</h3>
+                    <p class="fsize-20 color-vertfonce">La solution est une <strong>application web
+                            collaborative</strong>,
+                        structurée autour
+                        de :
+                        <br><br>
+                        • Défis mensuels adaptés aux équipes <br>
+                        • Suivi transparent des actions <br>
+                        • Récompenses collectives <br>
+                        • Communication interne motivante <br>
+                    </p>
+                </section>
+
+                <!-- WIREFRAME -->
+                <section class="solution-images">
+                    <h4 class="fsize-24 color-vertfonce">Wireframe</h4>
+
+                    <div class="flex flex-nowrap gap-50">
+                        <div>
+                            <img src="assets/wireframe1.png" alt="">
+                            <p>Page d'accueil en liste</p>
+                        </div>
+                        <div>
+                            <img src="assets/wireframe2.png" alt="">
+                            <p>Page des récompenses</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- MIDFI -->
+                <section class="solution-images">
+                    <h4 class="fsize-24 color-vertfonce">Mid-Fi</h4>
+                    <div class="flex flex-nowrap gap-50">
+                        <div>
+                            <img src="assets/midfi1.png" alt="">
+                            <p>Page d'accueil en liste</p>
+                        </div>
+                        <div>
+                            <img src="assets/midfi2.png" alt="">
+                            <p>Page d'accueil en calendrier</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- HIGHFI -->
+                <section class="solution-images">
+                    <h4 class="fsize-24 color-vertfonce">High-Fi</h4>
+                    <div class="flex flex-nowrap gap-50">
+                        <div>
+                            <img src="assets/highfi1.png" alt="">
+                            <p>Page de création d'un ensemble de défis</p>
+                        </div>
+                        <div>
+                            <img src="assets/highfi2.png" alt="">
+                            <p>Page d'accueil en calendrier</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <section id="prototype" class="scroll-mtop">
+                <h3 class="fsize-32 color-vertfonce m-bottom-30">Prototype Figma</h3>
+
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="500px"
+                    src="https://embed.figma.com/proto/YOWmq9Y5snDSU0wZy8UP9n/Dominique-Zineb-Thibault?page-id=1%3A2&node-id=4090-6330&viewport=-7307%2C-4191%2C0.21&scaling=scale-down&content-scaling=fixed&starting-point-node-id=4090%3A6910&show-proto-sidebar=1&embed-host=share"
+                    allowfullscreen></iframe>
+            </section>
+
+            <section id="usertests" class="scroll-mtop">
+                <h3 class="fsize-32 color-vertfonce m-bottom-30">Tests utilisateurs</h3>
+                <p class="fsize-20 color-vertfonce">Lors de la première session de test, les retours ont été
+                    <strong>globalement
+                        positifs</strong>.
+                    Les utilisateurs ont trouvé
+                    l'<strong>interface intuitive</strong> et le concept des défis engageant. Plusieurs axes
+                    d'amélioration ont cependant été
+                    identifiés, notamment sur l'<strong>ergonomie des boutons</strong>, la <strong>visibilité des
+                        défis en cours</strong> et l'<strong>ajout de
+                        fonctionnalités
+                        sociales</strong> comme un chat collectif.
+                </p>
+                <div class="usertests-images">
+                    <div>
+                        <div class="flex flex-nowrap gap-50">
+                            <div>
+                                <p class="usertest-text">Avant</p>
+                                <img src="assets/usertest1-avant.png" alt="">
+                            </div>
+                            <div>
+                                <p class="usertest-text">Après</p>
+                                <img src="assets/usertest1-apres.png" alt="">
+                            </div>
+                        </div>
+                        <p class="usertest-description">Les modifications apportées incluent la suppression des barres
+                            vertes pour une meilleure lisibilité, l’ajustement des dates afin de refléter les mises à
+                            jour récentes, ainsi que la modification de la palette de couleurs pour une meilleure
+                            cohérence visuelle.</p>
+                    </div>
+                    <div>
+                        <div class="flex flex-nowrap gap-50">
+                            <div>
+                                <p class="usertest-text">Avant</p>
+                                <img src="assets/coefficient.png" alt="">
+                            </div>
+                            <div>
+                                <p class="usertest-text">Après</p>
+                                <img src="assets/points.png" alt="">
+                            </div>
+                        </div>
+                        <p class="usertest-description">Au départ, nous avions utilisé un coefficient (×1, ×2 ou ×3),
+                            mais ce n'était pas très clair lors des tests utilisateurs. Nous avons donc décidé de le
+                            remplacer par un système de points, plus compréhensible et intuitif.</p>
+                    </div>
+                    <div>
+                        <div class="flex flex-nowrap gap-50">
+                            <div>
+                                <p class="usertest-text">Avant</p>
+                                <img src="assets/usertest3-avant.png" alt="">
+                            </div>
+                            <div>
+                                <p class="usertest-text">Après</p>
+                                <img src="assets/usertest3-apres.png" alt="">
+                            </div>
+                        </div>
+                        <p class="usertest-description">Suite aux retours des tests utilisateurs, nous avons modifié la
+                            couleur en passant du vert au beige, nous avons également arrondis les éléments visuels et
+                            ajusté les textes.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="perspectives" class="scroll-mtop bg-vertclair flex flex-column align-center">
+                <h3 class="fsize-32 color-vertfonce m-bottom-30">Perspectives d'évolution</h3>
+
+                <p class="fsize-20 color-vertfonce text-center">Notre prototype <strong>évolue en permanence</strong>
+                    grâce
+                    aux
+                    <strong>retours des
+                        utilisateurs</strong>.
+                    Les
+                    prochaines
+                    itérations
+                    viseront à <strong>renforcer l'ergonomie</strong>, <strong>fluidifier l'expérience
+                        utilisateur</strong>, et <strong>intégrer des
+                        fonctionnalités collaboratives</strong> pour maximiser l'engagement.
+                    Rien n’est figé, chaque retour est une opportunité d’<strong>amélioration concrète</strong> !
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+
+        <!-- CONTENU DU FOOTER -->
+        <div class="footer-container container">
+
+            <!-- LOGO SLOGAN ET BOUTON -->
+            <div class="agauche">
+
+                <!-- LOGO -->
+                <svg width="200" height="51" viewBox="0 0 276 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M31.9375 39.4688V50H0.125V4.90625H31.9375V15.4375H13.375V22.7188H30.7812V32.2188H13.375V39.4688H31.9375ZM71.2812 29.7812H59.625C59.375 26.2812 57.4375 24.1562 54.6875 24.1562C51.3125 24.1562 49.5 27.1562 49.5 32.7188C49.5 38.3438 51.2812 41.3438 54.6875 41.3438C57.5625 41.3438 59.4062 39.3438 59.625 35.9375H71.2812C71.1562 45.2812 64.7812 50.875 54.5312 50.875C43.3438 50.875 36.5312 44.0938 36.5312 32.7188C36.5312 21.4688 43.375 14.625 54.4688 14.625C64.5 14.625 71.125 20.4375 71.2812 29.7812ZM92.3438 50.875C81.0938 50.875 74.2188 44.375 74.2188 32.7188C74.2188 21.375 81.2812 14.625 92.3438 14.625C103.469 14.625 110.5 21.3125 110.5 32.7188C110.5 44.4062 103.625 50.875 92.3438 50.875ZM92.3438 41.7188C95.5312 41.7188 97.5 38.5312 97.5 32.75C97.5 27.125 95.5 23.7812 92.3438 23.7812C89.2188 23.7812 87.2188 27.125 87.2188 32.75C87.2188 38.5312 89.125 41.7188 92.3438 41.7188Z"
+                        fill="#A4BE7B" />
+                    <path
+                        d="M115.188 4.90625H134.469C148.156 4.90625 156.188 12.6875 156.188 27.125C156.188 41.5625 148.125 50 134.469 50H115.188V4.90625ZM128.438 15.4375V39.4688H132.594C139.219 39.4688 142.688 35.4375 142.688 27.125C142.688 19.5312 138.938 15.4375 132.594 15.4375H128.438ZM177.688 23.4375C174.781 23.4375 172.562 25.5625 172.312 28.5312H183.062C182.844 25.4375 180.688 23.4375 177.688 23.4375ZM183.438 38.8125H194.844C193.781 46.25 187.281 50.875 177.812 50.875C166.5 50.875 159.781 44.1562 159.781 32.9375C159.781 21.6562 166.562 14.625 177.406 14.625C188.094 14.625 195 21.4375 195 32V35.4688H172.125V36.2812C172.125 39.6562 174.562 42.0938 178 42.0938C180.594 42.0938 182.688 40.875 183.438 38.8125ZM182.031 10.7812H172.219L179.469 0.75H190.312L182.031 10.7812ZM202 50V24.7812H197.438V15.8125H202V14.375C202 7.5 205.344 4.375 215.156 4.375C217.344 4.375 219.812 4.625 221.156 4.90625V12.5625C220.531 12.4375 219.594 12.375 218.719 12.375C215.656 12.375 214.438 13.4375 214.438 15V15.8125H221.062V24.7812H214.812V50H202ZM225.031 50V15.5H237.844V50H225.031ZM231.438 13.5938C227.812 13.5938 225.062 10.9688 225.062 7.53125C225.062 4.09375 227.812 1.46875 231.438 1.46875C235.062 1.46875 237.812 4.09375 237.812 7.53125C237.812 10.9688 235.062 13.5938 231.438 13.5938ZM242.062 26.2188C242.062 19.0312 248.156 14.625 258.219 14.625C268.281 14.625 274.312 19.125 274.312 26.6562H262.688C262.688 24.4062 260.906 23 258.125 23C255.812 23 254.312 23.9375 254.312 25.375C254.312 26.4375 255.438 27.2188 257.656 27.625L265.438 29.1562C272.281 30.5 275.344 33.4375 275.344 38.6875C275.344 46.1875 268.594 50.875 258.5 50.875C247.719 50.875 241.719 46.1562 241.281 38.8125H253.656C253.906 41.0938 255.781 42.5 258.656 42.5C261.156 42.5 262.656 41.6562 262.656 40.2188C262.656 39.125 261.75 38.5 259.406 38.0625L252.75 36.75C245.781 35.375 242.062 31.6875 242.062 26.2188Z"
+                        fill="white" />
+                </svg>
+                <h3>Défis écologiques collectifs en entreprise </h3>
+                <a href="#" class="bouton-tertiaire inline-block">Devis gratuit !</a>
+            </div>
+
+            <!-- LIENS DE NAVIGATION
+            <div class="milieu">
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Ils l'utilisent</a></li>
+                    <li><a href="#">Comment ça marche ?</a></li>
+                    <li><a href="#">Pourquoi nous choisir ?</a></li>
+                    <li><a href="#">Tarifs</a></li>
+                </ul>
+            </div> -->
+
+            <!-- LIEN RESEAUX SOCIAUX -->
+            <div class="droit">
+                <a href="#"><img src="assets/youtube.svg" alt="Bouton YouTube"></a>
+                <a href="#"><img src="assets/linkedin.svg" alt="Bouton Linkedin"></a>
+                <a href="#"><img src="assets/facebook.svg" alt="Bouton Facebook"></a>
+                <a href="#"><img src="assets/github.svg" alt="Bouton Github"></a>
+            </div>
+        </div>
+
+        <!-- MENTION COPYRIGHT -->
+        <div class="legal">
+            <p>© 2025 EcoDéfis. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
