@@ -272,6 +272,7 @@ a {
   overflow: hidden;
   background: var(--beige);
   color: var(--blanc);
+  border-radius: 9999px;
 }
 
 .bouton-principal span {
@@ -313,6 +314,7 @@ a {
   border: 2px solid var(--vertfonce);
   cursor: pointer;
   transition: all 0.3s ease;
+  border-radius: 9999px;
 }
 
 .bouton-secondaire:hover {
@@ -324,6 +326,7 @@ a {
   background-color: var(--beige);
   color: var(--vertfonce);
   transition: all 0.3s ease;
+  border-radius: 9999px;
 }
 
 .bouton-tertiaire:hover {
@@ -575,6 +578,7 @@ header {
   width: 22%;
   background-color: var(--beige);
   overflow: hidden;
+  border-radius: 40px;
 }
 
 .card img {
@@ -631,6 +635,7 @@ header {
   top: 0;
   font-size: 24px;
   font-weight: 600;
+  border-radius: 40px 40px 0 0;
 }
 
 .tarifcard {
@@ -643,6 +648,7 @@ header {
   color: var(--vertfonce);
   display: flex;
   justify-content: space-between;
+  border-radius: 0 0 40px 40px;
 }
 
 .tarifcard ul {
